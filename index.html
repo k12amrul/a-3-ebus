@@ -2,81 +2,219 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Bus </title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Bus </title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="https://kit.fontawesome.com/9c3cc9883a.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9c3cc9883a.js" crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/9c3cc9883a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/9c3cc9883a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
 
 </head>
 
 
 
-<body>
-    <header >
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl">E-Bus</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
+<body class="mx-10">
+  <header>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Item 1</a></li>
+            <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
               </ul>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">E-Bus</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>home</a></li>
+          <li>
+            <a href="">details</a>
+          </li>
+          <li><a>login</a></li>
+          <li><a>logout</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Bus <img src="images/bus-icon.png" alt=""></a>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with P Paribahan</h1>
+            <p class="mb-5">E-Bus</p>
+            <a href="#buy-ticket">
+              <button class="btn btn-primary">Buy Tickets </button>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10 ">
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Best offers for you</h2>
+      </div>
+
+      <div class="grid ">
+        <div class="grid lg:grid-cols-2 gap-5">
+          <!-- 11111111111 -->
+          <div class="card  bg-red-100 text-slate-600 -content">
+            <div class="grid lg: grid-cols-2">
+
+
+              <div class="card-body">
+                <h2 class="card-title">15% OFF</h2>
+                <p>on your next purchase use by march 2024 </p>
+
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">NEW15
+                </h2>
+                <p>Coupon Code</p>
+
+              </div>
+
             </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
+
+          </div>
+          <!-- 11111111111 -->
+          <!-- 11111111111 -->
+          <div class=" card  bg-red-100 text-slate-600 -content">
+            <div class="grid lg: grid-cols-2">
+
+
+              <div class="card-body">
+                <h2 class="card-title">15% OFF</h2>
+                <p>on your next purchase use by march 2024 </p>
+
+              </div>
+              <div class="card-body">
+                <h2 class="card-title">NEW15
+                </h2>
+                <p>Coupon Code</p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!-- 11111111111 -->
+
+
+        </div>
+        <div></div>
+      </div>
+      <div class="card-body items-center text-center">
+
+        <div class="card-actions">
+          <button class="btn btn-primary">See All Offers</button>
+        </div>
+
+    </section>
+
+    <!-- buy-ticket section -->
+  
+
+
+    <!-- ticket section -->
+    <section class=" my-10" id="buy-ticket">
+
+      <div class="card-body items-center text-center">
+        <h2 class="card-title  text-6xl">Santi Paribahan</h2>
+        <p class="text-2xl ">Yes, you can run unit tests and view the results directly within the app. The integrated
+          testing features allow for a streamlined .</p>
+      </div>
+
+      <!-- //////////////////////1111 -->
+
+      <div class="hero min-h-80 bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/fare.png" alt="">
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">550 Taka</h2>
+              <p>per sheat</p>
+             <br>
+             <br>
             </div>
           </div>
-    </header>
-
-    <main>
-        <section>
-            <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button class="btn btn-primary">Get Started</button>
-                  </div>
+          <div class="flex flex-col  justify-between p-6">
+            <div class=" flex justify-between ">
+              <div class="flex">
+                <img class="size-8" src="images/bus-logo.png" alt="">
+                <div>
+                  <h1>Santi Paribahan</h1>
+                  <p>Coach-009-WEB ! AC_Business</p>
+    
                 </div>
               </div>
-        </section>
+               <div class=" flex justify-between">
+            <img class="size-6" src="images/seat-green.png" alt="">
+            <h3> 40 Seats left</h3>
+          </div>
+            </div>
+            <div class="flex justify-between p-3" >
+              <h3>route</h3>
+              <p>dhaka- feni</p>
+            </div>
+            <div class="flex justify-between p-3" >
+              <h3>Departure Time</h3>
+              <p>7:00am</p>
+            </div>
+            <div class="flex justify-around p-3" >
+              
 
-    </main>
-  
+                <h3>Boarding Point - cummilla</h3>
+                <h3>Dropping Point - dawodcandi </h3>
+                <h3>Est. Time - 5 Hour</h3>
+           
+            </div>
+            
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- seat section -->
+    <section>
+
+    </section>
+
+
+
+  </main>
+
 </body>
 
 <script src="index.js"></script>
+
 </html>
