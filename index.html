@@ -7,7 +7,9 @@
   <title>E-Bus </title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-o+L6dh0OZ85yf8iMFTvW2j2h7kVb8fJX0dI7Kw+4qKmNqVhbCZGjP5uxqHb4LNstJ3YQBwXxDfT7dJoaGNEFqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-o+L6dh0OZ85yf8iMFTvW2j2h7kVb8fJX0dI7Kw+4qKmNqVhbCZGjP5uxqHb4LNstJ3YQBwXxDfT7dJoaGNEFqw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="https://kit.fontawesome.com/9c3cc9883a.js" crossorigin="anonymous"></script>
 
@@ -139,7 +141,7 @@
 
     </section>
 
-  
+
 
 
     <!-- ticket section -->
@@ -162,8 +164,8 @@
             <div class="card-body items-center text-center">
               <h2 class="card-title">550 Taka</h2>
               <p>per sheat</p>
-             <br>
-             <br>
+              <br>
+              <br>
             </div>
           </div>
           <div class="flex flex-col  justify-between p-6">
@@ -173,88 +175,148 @@
                 <div>
                   <h1>Santi Paribahan</h1>
                   <p>Coach-009-WEB ! AC_Business</p>
-    
+
                 </div>
               </div>
-               <div class=" flex justify-between">
-            <img class="size-6" src="images/seat-green.png" alt="">
-            <h3> 40 Seats left</h3>
-          </div>
+              <div class=" flex justify-between">
+                <img class="size-6" src="images/seat-green.png" alt="">
+                <h3> 40 Seats left</h3>
+              </div>
             </div>
-            <div class="flex justify-between p-3" >
+            <div class="flex justify-between p-3">
               <h3>route</h3>
               <p>dhaka- feni</p>
             </div>
-            <div class="flex justify-between p-3" >
+            <div class="flex justify-between p-3">
               <h3>Departure Time</h3>
               <p>7:00am</p>
             </div>
-            <div class="flex justify-around p-3" >
-              
+            <div class="flex justify-around p-3">
 
-                <h3>Boarding Point - cummilla</h3>
-                <h3>Dropping Point - dawodcandi </h3>
-                <h3>Est. Time - 5 Hour</h3>
-           
+
+              <h3>Boarding Point - cummilla</h3>
+              <h3>Dropping Point - dawodcandi </h3>
+              <h3>Est. Time - 5 Hour</h3>
+
             </div>
-            
-           
+
+
           </div>
         </div>
       </div>
     </section>
 
-<!-- seat section -->
+    <!-- seat section -->
     <section>
 
-    <!-- buy-ticket section -->
+      <!-- buy-ticket section -->
 
-    <div class=" grid lg:grid-cols-2 min-h-screen p-4">
-      <div >
-        <h1> Select Your Seat</h1>
-        <div class="flex justify-between m-6">
+      <div class=" grid lg:grid-cols-2 min-h-screen p-4">
+        <div>
+          <h1> Select Your Seat</h1>
+          <div class="flex justify-between m-6">
 
-          <div class="flex  " > <img class="" src="images/seat-gray.png" alt=""> <h3>Avillable</h3></div>
-          <div class="flex " > <img src="images/seat-green-filled.png" alt=""> <h3>Selected</h3></div>
+            <div class="flex  "> <img class="" src="images/seat-gray.png" alt="">
+              <h3>Avillable</h3>
+            </div>
+            <div class="flex "> <img src="images/seat-green-filled.png" alt="">
+              <h3><span id="selected-seat" >0</span> Selected </h3>
+            </div>
+          </div>
+          <div class="flex justify-between m-6">
+
+            <div></div>
+            <div> <i class="fas fa-bus"></i>
+            </div>
+
+          </div>
+
+          <div class=" card grid grid-cols-2  md:grid-cols-4 lg:grid-cols-4  m-6">
+
+            <button class="m-3 btn btn-outline">A1</button>
+            <button class="m-3 btn btn-outline">A2</button>
+            <button class="m-3 btn btn-outline">A3</button>
+            <button class="m-3 btn btn-outline">A4</button>
+            <button class="m-3 btn btn-outline">B1</button>
+            <button class="m-3 btn btn-outline">B2</button>
+            <button class="m-3 btn btn-outline">B3</button>
+            <button class="m-3 btn btn-outline">B4</button>
+            <button class="m-3 btn btn-outline">C1</button>
+            <button class="m-3 btn btn-outline">C2</button>
+            <button class="m-3 btn btn-outline">C3</button>
+            <button class="m-3 btn btn-outline">C4</button>
+            <button class="m-3 btn btn-outline">d</button>
+            <button class="m-3 btn btn-outline">D</button>
+              <div>
+              <button></button>
+            </div>
+
+
+          </div>
+
+
         </div>
-        <div class="flex justify-between m-6">
+        <div class=" m-6">
+           <h1> Select Your Seat</h1>
+           
+            <div class="selected-seats">
+              <div class="">Seat <span id="seat-count">0</span></div>
+              <div class="">Class</div>
+              <div class="price">Price</div>
+            </div>
 
-          <div></div>
-          <div> <i class="fas fa-bus"></i>
+          
+
+          <div id="selected-seat-container" class=" ">
+            
+          </div>
+
+          <div class="flex justify-between m-8">
+            <h4>Total Price </h4>
+            <h4>BDT <span id="total-price">0</span></h4>
+
+          </div>
+
+          <div class="join">
+            <input type="text" class="input input-bordered join-item" placeholder="Have any copupon?" />
+            <button onclick="updateGrandTotalPrice()" class="btn-apply join-item rounded-r-full">Subscribe</button>
+          </div>
+          <div class="flex justify-between m-8">
+            <h4>Grand Total  </h4>
+            <h4>BDT <span id="grand-total-price">0</span></h4>
+
           </div>
           
+          <div class="flex  m-8">
+            <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Passenger Name*</span>
+                  </label>
+                  <input type="text" placeholder="Enter your name" class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Password</span>
+                  </label>
+                  <input type="number" placeholder="number" class="input input-bordered" required />
+                
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Passenger Name*</span>
+                  </label>
+                  <input type="text" placeholder="Enter your name" class="input input-bordered" required />
+                </div>
+            <h4>eeeeeeeeeeeeeeeeee</h4>
+            <input  type="text" placeholder="name">
+          
         </div>
 
-        <div class=" card grid  md:grid-cols-4 lg:grid-cols-4  m-6">
-          
-          <button class="btn btn-outline">D</button>
-          <button class="btn btn-outline">D</button>
-          <button class="btn btn-outline">D</button>
-          <button class="btn btn-outline">d</button>
-          <button class="btn btn-outline">Default</button>
-          <button class="btn btn-outline">Default</button>
-          <button class="btn btn-outline">Default</button>
-          <button className="btn">Button</button>
-          <button className="btn">Button</button>
-         <div>
-          <button></button>
-         </div>
-         
-          
-          </div>
-        
-        
-      </div>
-      <div >
-        <h1>second part</h1>
-        <h1> Select Your Seat</h1>
-        <div class="flex justify-between">
 
-          <div class="flex " > <img class="" src="images/seat-gray.png" alt=""> <h3>avillable</h3></div>
-          <div class="flex " > <img src="images/seat-green-filled.png" alt=""> <h3>avillable</h3></div>
         </div>
       </div>
-    </div>
     </section>
 
 
