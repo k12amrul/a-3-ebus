@@ -87,7 +87,7 @@
       <div class="grid ">
         <div class="grid lg:grid-cols-2 gap-5">
           <!-- 11111111111 -->
-          <div class="card  bg-red-100 text-slate-600 -content">
+          <div class="card  bg-yellow-400 text-slate-600 -content">
             <div class="grid lg: grid-cols-2">
 
 
@@ -108,17 +108,18 @@
           </div>
           <!-- 11111111111 -->
           <!-- 11111111111 -->
-          <div class=" card  bg-red-100 text-slate-600 -content">
+          <div class=" card  bg-red-400 text-slate-600 -content">
             <div class="grid lg: grid-cols-2">
 
 
               <div class="card-body">
-                <h2 class="card-title">15% OFF</h2>
+                <h2 class="card-title">20% OFF</h2>
                 <p>on your next purchase use by march 2024 </p>
 
               </div>
               <div class="card-body">
-                <h2 class="card-title">NEW15
+                <h2 class="card-title">Couple 20
+                  
                 </h2>
                 <p>Coupon Code</p>
 
@@ -220,7 +221,7 @@
               <h3>Avillable</h3>
             </div>
             <div class="flex "> <img src="images/seat-green-filled.png" alt="">
-              <h3><span id="selected-seat" >0</span> Selected </h3>
+              <h3><span id="total-seat" >40</span> Selected </h3>
             </div>
           </div>
           <div class="flex justify-between m-6">
@@ -245,8 +246,10 @@
             <button class="m-3 btn btn-outline">C2</button>
             <button class="m-3 btn btn-outline">C3</button>
             <button class="m-3 btn btn-outline">C4</button>
-            <button class="m-3 btn btn-outline">d</button>
-            <button class="m-3 btn btn-outline">D</button>
+            <button class="m-3 btn btn-outline">d1</button>
+            <button class="m-3 btn btn-outline">d2</button>
+            <button class="m-3 btn btn-outline">d3</button>
+            <button class="m-3 btn btn-outline">d4</button>
               <div>
               <button></button>
             </div>
@@ -278,8 +281,8 @@
           </div>
 
           <div class="join">
-            <input type="text" class="input input-bordered join-item" placeholder="Have any copupon?" />
-            <button onclick="updateGrandTotalPrice()" class="btn-apply join-item rounded-r-full">Subscribe</button>
+            <input id="coupon-code"  type="text" class="input input-bordered join-item" placeholder="Have any copupon?" />
+            <button onclick="updateGrandTotalPrice('a')" class="btn-apply join-item rounded-r-full">Apply</button>
           </div>
           <div class="flex justify-between m-8">
             <h4>Grand Total  </h4>
