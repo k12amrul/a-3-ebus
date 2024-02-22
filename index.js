@@ -11,8 +11,6 @@ for (const btn of allBtn) {
 
     const nameOfTicket = e.target.innerText
 
-
-
     const selectedSeatContainer = document.getElementById("selected-seat-container")
     const div = document.createElement('div')
     const p1 = document.createElement('p')
@@ -30,16 +28,30 @@ for (const btn of allBtn) {
 
 
     selectedSeatContainer.appendChild(div)
-    btn.setAttribute('disabled', 'true')
+    btn.setAttribute('disabled', true)
     btn.style.backgroundColor = "green"; // Change color to gray
     btn.classList.add('text'); // Change color to gray
 
-    // seatCount('0')
+    
     const matchFour = updateCartIncrementCount() 
-    console.log(matchFour)
-    if( matchFour ===  4 ){
-      btn.setAttribute('disabled', 'true')
+    console.log(matchFour ,'4')
+    if( matchFour == 3 ){
+      alert('click')
+      // btn.style.backgroundColor = "red";
+      btn.setAttribute('disabled',true)
+      
+      for ( const btnEl  of  allBtn ){
+        btnEl.setAttribute( 'disabled',true )
+
+      }
+      // btn.removeEventListener( 'click', function (){
+        
+      // } )
+
+      // btn.classList.add('dis')
     }
+
+
     // updateCartIncrementCount()
     updateCartDecrementCount()
     updatedTotalPrice('550')
@@ -124,6 +136,16 @@ function updateCartCount() {
 }
 
 
+function changeColor() {
+  // Get the element by its id
+  var textElement = document.getElementById("textToChange");
+  
+  // Generate a random color
+  var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  
+  // Set the color of the element
+  textElement.style.color = randomColor;
+}
 
 
 

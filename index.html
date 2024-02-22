@@ -234,15 +234,15 @@
 
           <div class=" card grid grid-cols-2  md:grid-cols-4 lg:grid-cols-4  m-6">
 
-            <button class="m-3 btn btn-outline">A1</button>
-            <button class="m-3 btn btn-outline">A2</button>
-            <button class="m-3 btn btn-outline">A3</button>
-            <button class="m-3 btn btn-outline">A4</button>
-            <button class="m-3 btn btn-outline">B1</button>
-            <button class="m-3 btn btn-outline">B2</button>
-            <button class="m-3 btn btn-outline">B3</button>
-            <button class="m-3 btn btn-outline">B4</button>
-            <button class="m-3 btn btn-outline">C1</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">A1</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">A2</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">A3</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">A4</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">B1</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">B2</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">B3</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">B4</button>
+            <button id="textToChange" onclick="changeColor()" class="m-3 btn btn-outline">C1</button>
             <button class="m-3 btn btn-outline">C2</button>
             <button class="m-3 btn btn-outline">C3</button>
             <button class="m-3 btn btn-outline">C4</button>
@@ -282,7 +282,10 @@
 
           <div class="join">
             <input id="coupon-code"  type="text" class="input input-bordered join-item" placeholder="Have any copupon?" />
-            <button onclick="updateGrandTotalPrice('a')" class="btn-apply join-item rounded-r-full">Apply</button>
+            <button    onclick="updateGrandTotalPrice('a')"  class="btn-apply join-item rounded-r-full"   >Apply</button>
+            <!-- onclick="my_modal_3.showModal()" -->
+         
+         
           </div>
           <div class="flex justify-between m-8">
             <h4>Grand Total  </h4>
@@ -308,12 +311,12 @@
                 </div>
                 <div class="form-control">
                   <label class="label">
-                    <span class="label-text">Passenger Name*</span>
+                    <span class="label-text">Enter your email</span>
                   </label>
-                  <input type="text" placeholder="Enter your name" class="input input-bordered" required />
+                  <input type="text" placeholder="Enter your email" class="input input-bordered" required />
                 </div>
-            <h4>eeeeeeeeeeeeeeeeee</h4>
-            <input  type="text" placeholder="name">
+            <button onclick="my_modal_2.showModal()" >next</button>
+            <!-- <input  type="text" placeholder="name"> -->
           
         </div>
 
@@ -325,6 +328,35 @@
 
 
   </main>
+
+  <!-- modal
+  <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click outside to close</p>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog> -->
+
+
+<!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <img src="images/success.png" alt="">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click outside to close</p>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+
 
 </body>
 

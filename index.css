@@ -8,6 +8,15 @@
 }
 
 
-.text {
+/* .text {
     text-color: white
-}
+} */
+
+#textToChange {
+    color:rgb(48, 5, 238);
+  }
+
+
+  .dis{
+    display: hidden;
+  }
